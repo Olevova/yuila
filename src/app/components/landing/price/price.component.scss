@@ -1,0 +1,40 @@
+.price{
+    &__title{
+        padding: 75px 0 100px 0;
+       & > h2{
+        text-align: center;
+       }
+    }
+    &__info{
+        background: url('../../../../assets/images/price.webp');
+        background-size: cover;
+        height: 690px;
+    }
+    &__card{
+        padding: 50px 40px;
+        max-width: 360px;
+        background-color: var(--white);
+        border-radius: 50px;
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+        gap:30px;
+        &-conditions{
+            align-items: center;
+            gap: 20px;
+        }
+    }
+    &__container{
+        gap:30px;
+        top:-30px;
+        position: relative;
+        justify-content: center
+
+    }
+    
+}
+
+.conditions{
+    gap:15px;
+    & > li{
+        list-style: inside;
+    }
+}

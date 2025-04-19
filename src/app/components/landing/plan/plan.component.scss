@@ -1,0 +1,46 @@
+.plan {
+  background: url("../../../../assets/images/background.webp");
+  background-size: cover;
+  padding: 65px 0;
+  &__content {
+    gap: 40px;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  &__number {
+    width: 50px;
+    height: 50px;
+    top: 0;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 20px;
+    background-color: var(--white);
+    z-index: 2;
+    &::after {
+      content: "";
+      width: 1px;
+      background-color: var(--white);
+      height: calc(100% - 10px);
+      position: absolute;
+      top: 50px;
+      left: 25px;
+      z-index: 1;
+    }
+  }
+  &__item {
+    position: relative;
+    gap: 20px;
+  }
+
+  &__info {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.plan__item:last-child .plan__number::after {
+    display: none;
+  }

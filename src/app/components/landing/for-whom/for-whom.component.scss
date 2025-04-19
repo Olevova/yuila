@@ -1,0 +1,55 @@
+.whom{
+    position: relative;
+    padding: 80px 20px;
+    
+   &__titlewraper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--black);
+    margin:0 auto;
+    margin-bottom: 74px;
+    max-width: 936px;
+    gap:20px
+   } 
+   &__list{
+    padding-top: 20px;
+    max-width: 1140px;
+    gap:20px;
+    margin: 0 auto;
+  }
+  &__item {
+    flex: 1 1;
+    display: flex;
+    align-items: stretch;
+    & p{
+      text-align: center;
+    }
+  }
+    .icon-svg--one,
+    .icon-svg--two,
+    .icon-svg--three,
+    .icon-svg--four,
+    .icon-svg--five {
+      position: absolute;
+      top: 100%; // під .whom__titlewraper
+      height: 74px;
+      // width: 2px;
+    }
+
+    // Розставимо по горизонталі як перевернута Ш
+    .icon-svg--one   { left: 50%; }
+    .icon-svg--two   { left: 25%; }
+    .icon-svg--three { left: 50%; transform: translateX(-50%); }
+    .icon-svg--four  { right: 25%; }
+    .icon-svg--five  { right: 50%; }
+  
+}
+.icon-lamp{
+  width: 40px;
+  height: 40px;
+}

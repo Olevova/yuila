@@ -1,0 +1,42 @@
+@use '../../../../assets/scss/breakpoint' as *;
+
+.about{
+    @media (min-width: #{$pc-small}) {
+        padding: 90px 0 174px 0;
+       }
+    background-color: var(--bg-primary);
+    
+    &__container{
+        gap:60px
+    }
+    &__image-wrapper{
+        min-width: 691px;
+        position: relative;
+    }
+    &__image{
+        position: absolute;
+        top:-200px
+    }
+    &__content{
+        gap:42px;
+    }
+    &__list{
+        gap:25px;
+        font-size: 20px;
+    }
+    &__item{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+
+        & p{
+            max-width: 560px;
+        }
+    }
+}
+
+.icon-svg{
+    width: 24px;
+    height: 24px;
+}
+

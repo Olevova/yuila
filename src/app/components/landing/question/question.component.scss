@@ -1,0 +1,19 @@
+.question{
+    background: url('../../../../assets/images/question.webp');
+    background-size: cover;
+    padding: 183px 0;
+    color: var(--white);
+    height: 100%;
+    gap: 100px;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    margin-top: -60px;
+    & > h2{
+        margin-bottom: 35px;
+    }
+    & > button{
+        color: var(--black);
+    }
+}
