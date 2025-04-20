@@ -9,9 +9,25 @@
             <input class="input" id="email" type="email" placeholder="електронна скринька" formControlName="email">
         </label>
         <label for="phone">
-            <input class="input" id="phone" type="text" placeholder="телефон" formControlName="phone">
+            <input class="input" id="phone" type="tel" placeholder="телефон" formControlName="phone">
         </label>
-        <button type="submit"> звязатись</button>
+        <button type="submit" [disabled]="form.invalid || isSending">
+            {{ isSending ? 'Надсилається...' : 'Зв’язатись' }}
+          </button>
         <button #sendBtn type="reset" hidden>Reset</button>
     </form>
+
+    @if(sendMessage){
+        <div>
+            <p>Ваше повідомлення надіслано успішно</p>
+            <button (click)="closeSuccesMsg()">Закрити</button>
+        </div>
+    }
+
+    @if(errorMsg){
+        <div>
+            <p>Сталася помилка: {{ errorText }}</p>
+            <button (click)="closeErrorMsg()">Закрити</button>
+        </div>
+    }
 </section>
