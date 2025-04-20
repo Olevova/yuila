@@ -1,0 +1,19 @@
+.form{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.form > form{
+    min-width: 450px;
+    padding: 35px;
+    gap:30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    align-items: center;
+}
+form > label{
+    min-width: 450px;
+}
+.input{
+    width: 100%;
+    padding: 14px 15px;
+}

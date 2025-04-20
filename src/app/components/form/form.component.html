@@ -1,1 +1,17 @@
-<p>form works!</p>
+<section class="form container flex-column">
+
+    <form class="flex-column" action="" [formGroup]="form" (ngSubmit)="onSubmit(sendBtn)">
+        <h2>форма</h2>
+        <label for="name">
+            <input class="input" id="name" type="text"  placeholder="ім'я" formControlName="name">
+        </label>
+        <label for="email">
+            <input class="input" id="email" type="email" placeholder="електронна скринька" formControlName="email">
+        </label>
+        <label for="phone">
+            <input class="input" id="phone" type="text" placeholder="телефон" formControlName="phone">
+        </label>
+        <button type="submit"> звязатись</button>
+        <button #sendBtn type="reset" hidden>Reset</button>
+    </form>
+</section>

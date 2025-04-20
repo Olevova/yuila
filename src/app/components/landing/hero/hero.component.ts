@@ -10,10 +10,14 @@ export class HeroComponent implements AfterViewInit{
   @ViewChild('bgVideo')bgVideoRef!: ElementRef<HTMLVideoElement>;
 
   ngAfterViewInit(){
-    const video = this.bgVideoRef.nativeElement;
-    video.muted = true; 
+    const video = this.bgVideoRef?.nativeElement;
+
+  if (video && typeof video.play === 'function') {
     video.play().catch(err => {
-      console.warn('Autoplay blocked or failed:', err);
+      console.error('Помилка при запуску відео:', err);
     });
+  } else {
+    console.warn('Video element недоступний або не має методу play');
+  }
   }
 }

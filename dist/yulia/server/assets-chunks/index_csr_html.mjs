@@ -1,0 +1,14 @@
+export default `<!doctype html>
+<html lang="en" data-beasties-container="">
+<head>
+  <meta charset="utf-8">
+  <title>Yulia</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}*,*:before,*:after{box-sizing:border-box}html,body{scroll-behavior:smooth}html{min-height:100vh;overflow-x:hidden;position:relative}body{font-family:Inter,sans-serif;font-style:normal;font-weight:400}:root{--black:#000;--black-second:#1e1e20;--white:#fff;--btn-blue:#333735;--bg-primary:#7ce5e0}</style><link rel="stylesheet" href="styles-NAF7U7RL.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-NAF7U7RL.css"></noscript></head>
+<body ngcm="">
+  <app-root></app-root>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-3QEFVCCS.js" type="module"></script></body>
+</html>
+`;
