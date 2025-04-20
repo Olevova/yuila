@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import {FormBuilder, ReactiveFormsModule, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'app-form',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule ],
   templateUrl: './form.component.html',
   styleUrl: './form.component.scss'
 })
