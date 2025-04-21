@@ -11,7 +11,7 @@
         <label for="phone">
             <input class="input" id="phone" type="tel" placeholder="телефон" formControlName="phone">
         </label>
-        <button type="submit" [disabled]="form.invalid || isSending">
+        <button type="submit" [disabled]="form.invalid || isSending" [ngClass]="form.valid ? 'blue': ''">
             {{ isSending ? 'Надсилається...' : 'Зв’язатись' }}
           </button>
         <button #sendBtn type="reset" hidden>Reset</button>
