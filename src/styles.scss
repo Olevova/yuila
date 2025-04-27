@@ -26,10 +26,22 @@ html {
 
 
 body{
-  font-family: 'Inter', sans-serif;
+  font-family: var(--prime);
   font-style: normal;
   font-weight: 400;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: var(--big);
+  font-style: normal;
+  font-weight: 400;
+}
+
 h1,
 h2,
 h3,
@@ -68,19 +80,28 @@ button:focus {
 
 button{
     padding: 20px 33px;
-    border-radius: 50px;
     width: fit-content;
+    font-family: var(-btnFonts);
     text-transform: uppercase;
     font-weight: 900;
     font-size: 14px;
     letter-spacing: 0.1em;
+    transition: background-color linear 300ms ;
     &.blue{
         background-color: var(--bg-primary);
         color:var(--btn-blue);
+        &:hover,
+        &:focus {
+      background-color: var(--btn-active); 
+    }
     }
     &.black{
         background-color: var(--black);
         color:var(--white);
+        &:hover,
+    &:focus {
+      background-color: var(--btn-active-black); 
+    }
     }
 }
 .row {
@@ -151,7 +172,7 @@ button{
   }
 
   @media (min-width:#{$pc-big}) {
-    max-width: $pc;
+    max-width: 1200px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -159,18 +180,27 @@ button{
 
 //Vars
 :root {
+  // fonts
+  --prime: "Source Sans 3", sans-serif;
+  --second: "Roboto", sans-serif;
+  --big: "Cormorant", sans-serif;
+  --btnFonts: "Raleway", sans-serif;
 //text color
  --black:#000;
  --black-second: #1e1e20;
  --white:#fff;
 //Button
  --btn-blue:#333735;
-
+ --btn-active:#a6f0ec;
+ --btn-active-black: #333;
 // border
  
     
 // Background
-  --bg-primary: #7ce5e0;;
+  --bg-section-blue:#24334D;
+  --bg-primary: #7ce5e0;
+  --bg-section:#F8F8F8;
+  
   
 //Elements Image Backgrounds;
 

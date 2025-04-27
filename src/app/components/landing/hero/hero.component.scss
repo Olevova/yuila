@@ -1,9 +1,9 @@
-@use '../../../../assets/scss/breakpoint' as *;
+@use "../../../../assets/scss/breakpoint" as *;
 
-.hero{
-    position: relative;
-    &::before{
-    content: '';
+.hero {
+  position: relative;
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -11,30 +11,53 @@
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
     z-index: 2;
-    }
+  }
+
+  height: 450px;
+  padding: 150px 15px 50px 15px;
+
+  @media (min-width: #{$mobile_hor}) {
+    height: 500px;
+  }
+  @media (min-width: #{$pc-small}) {
+    padding: 200px 0 185px 0;
     height: 700px;
-    // max-width: 718px;
-    @media (min-width: #{$pc-small}) {
-       padding: 415px 0 105px 0;
-       
-      }
-    &__title{
-        max-width: 400px;
-        margin-bottom: 32px;
-        z-index: 3;
-    }  
-    & button{
-        z-index: 3;
+  }
+  &__title {
+    font-family: var(--big);
+    font-size: 64px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 32px;
+    z-index: 3;
+    color: var(--white);
+    max-width: 90%;
+    line-height: 100%;
+    @media (min-width: #{$mobile_vert}) {
+      font-size: 42px;
     }
+
+    @media (min-width: #{$mobile_hor}) {
+      font-size: 64px;
+    }
+    @media (min-width: #{$pc-small}) {
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 90%;
+      max-width: 1000px;
+    }
+  }
+  & button {
+    z-index: 3;
+  }
 }
 
-.video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    
-    }
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}

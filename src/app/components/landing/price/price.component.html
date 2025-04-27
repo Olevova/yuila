@@ -22,53 +22,59 @@
                 Готельна база для популярних країн
               </li>
             </ul>
-            <span>{{ 39 }}</span>
-            <button class="blue">Оплатити</button>
+            <span class="number">{{549}}$</span>
+            <button (click)="payFunc()" class="blue">Оплатити</button>
           </div>
         </li>
         <li class="price__card flex-column">
-          <h3 class="price__card-title">Базовий</h3>
+          <h3 class="price__card-title">Максимальний</h3>
           <div class="price__card-conditions flex-column">
             <ul class="conditions flex-column">
               <li class="">
-                Ідеально для старту!
+                Глибше, більше, впевненіше!
               </li>
               <li class="">
-                Базовий курс для майбутніх менеджерів
+                Розширена готельна база по всіх напрямках
               </li>
               <li class="">
-                Основні туристичні напрямки
+                Включає екзотику
               </li>
               <li class="">
-                Готельна база для популярних країн
+                Підтримка після завершення курсу
               </li>
             </ul>
-            <span>{{ 39 }}</span>
-            <button class="blue">Оплатити</button>
+            <span class="number">{{749}}$</span>
+            <button (click)="payFunc()" class="blue">Оплатити</button>
           </div>
         </li>
         <li class="price__card flex-column">
-          <h3 class="price__card-title">Базовий</h3>
+          <h3 class="price__card-title">Ексклюзивний</h3>
           <div class="price__card-conditions flex-column">
             <ul class="conditions flex-column">
               <li class="">
-                Ідеально для старту!
+                Для тих, хто хоче відкрити власну справу!
               </li>
               <li class="">
-                Базовий курс для майбутніх менеджерів
+                Окремий модуль: відкриття агенції
               </li>
               <li class="">
-                Основні туристичні напрямки
-              </li>
-              <li class="">
-                Готельна база для популярних країн
+                Допомога у виборі формату (онлайн/офлайн, франчайзинг/незалежна агенція)
               </li>
             </ul>
-            <span>{{ 39 }}</span>
-            <button class="blue">Оплатити</button>
+            <span class="number">{{949}}$</span>
+            <button class="blue" (click)="payFunc()">Оплатити</button>
           </div>
         </li>
       </ul>
+      <div class="benefits flex-column">
+        <h3 class="benefits__title">Бонуси</h3>
+        <ul class="benefits__info">
+          <li class="benefits__card"><p>Доступ до спільноти учнів</p></li>
+          <li class="benefits__card"><p>Персональна консультація від мене</p></li>
+          <li class="benefits__card"><p>Готові матеріали для старту роботи</p></li>
+        </ul>
+      </div>
     </div>
+    
   </div>
 </section>

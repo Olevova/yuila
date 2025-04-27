@@ -1,8 +1,16 @@
-.ready{
-    padding: 100px 0 150px 0;
-    background: linear-gradient(304deg,rgba(45, 174, 221, 0.55) 50%, rgba(112, 250, 192, 1) 100%, rgba(124, 229, 224, 1) 100%);
-    &__container{
-        gap: 30px;
-    }
-    color:var(--white)
+.ready {
+  padding: 100px 0 300px 0;
+  // background: linear-gradient(304deg,rgba(45, 174, 221, 0.55) 50%, rgba(112, 250, 192, 1) 100%, rgba(124, 229, 224, 1) 100%);
+  background-color: var(--bg-section);
+  &__container {
+    gap: 30px;
+  }
+  color: var(--btn-blue);
+  h2 {
+    font-family: var(--big);
+    font-size: 64px;
+  }
+  p{
+    font-size: 20px;
+  }
 }

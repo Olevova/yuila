@@ -2,13 +2,17 @@
     <div class="whom__titlewraper">
         <app-svg class="icon-lamp" [filePath]="'/assets/icon/whom-lamp.svg'" ></app-svg>
         <h2 class="whom__title">Кому буде корисно:</h2>
-        <app-svg class="icon-svg--one" [filePath]="'/assets/icon/whom-line.svg'" ></app-svg>
-        <app-svg class="icon-svg--two" [filePath]="'/assets/icon/whom-line.svg'" ></app-svg>
-        <app-svg class="icon-svg--three" [filePath]="'/assets/icon/whom-line.svg'" ></app-svg>
-        <app-svg class="icon-svg--four" [filePath]="'/assets/icon/whom-line.svg'" ></app-svg>
-        <app-svg class="icon-svg--five" [filePath]="'/assets/icon/whom-line.svg'" ></app-svg>
+        
     </div>
-    <ul class="whom__list row-no-wrap ">
+    <div class="whom__info">
+        <div class="lines">
+            <app-svg class="icon-svg--one" [filePath]="'/assets/icon/whom-line.svg'" ></app-svg>
+            <app-svg class="icon-svg--two" [filePath]="'/assets/icon/whom-line.svg'" ></app-svg>
+            <app-svg class="icon-svg--three" [filePath]="'/assets/icon/whom-line.svg'" ></app-svg>
+            <app-svg class="icon-svg--four" [filePath]="'/assets/icon/whom-line.svg'" ></app-svg>
+            <app-svg class="icon-svg--five" [filePath]="'/assets/icon/whom-line.svg'" ></app-svg>
+        </div>
+    <ul class="whom__list row">
         <li class="whom__item">
             <p>Якщо ти мрієш працювати у сфері туризму, але не знаєш, з чого почати</p>
         </li>
@@ -24,5 +28,7 @@
         <li class="whom__item">
             <p>Якщо ти прагнеш бути незалежною і мати можливість працювати з будь якої точки світу без привʼязки до офісу</p>
         </li>
+        
     </ul>
+    </div>
 </section>
