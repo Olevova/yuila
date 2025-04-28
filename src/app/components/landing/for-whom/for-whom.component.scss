@@ -1,8 +1,11 @@
 @use "../../../../assets/scss/breakpoint" as *;
 .whom {
   position: relative;
-  padding: 80px 20px;
-
+  padding-top: 50px;
+  padding-bottom: 70px;
+  @media (min-width: #{$pc-small}) {
+    padding: 50px 20px 70px 20px;
+  }
   &__titlewraper {
     position: relative;
     display: flex;
@@ -99,7 +102,7 @@
   .icon-svg--one {
     transform: rotate(-90deg);
     transform-origin: top left;
-    left: -1px;
+    left: -5px;
     top: 2px;
     @media (min-width: 700px) {
       transform: none;
@@ -112,7 +115,7 @@
   .icon-svg--two {
     transform: rotate(-90deg);
     transform-origin: top left;
-    left: -1px;
+    left: -3px;
     top: 25%;
     @media (min-width: 700px) {
       transform: none;
@@ -125,7 +128,7 @@
   .icon-svg--three {
     transform: rotate(-90deg);
     transform-origin: top left;
-    left: -1px;
+    left: -3px;
     top:50%;
     @media (min-width: 700px) {
       transform: none;
@@ -139,7 +142,7 @@
   .icon-svg--four {
     transform: rotate(-90deg);
     transform-origin: top left;
-    left: -1px;
+    left: -3px;
     top: 75%;
     @media (min-width: 700px) {
       transform: none;
@@ -154,7 +157,7 @@
     transform: rotate(270deg);
     transform-origin: bottom left;
     left: 38px;
-    bottom: -2px;
+    bottom: -3px;
     @media (min-width: 700px) {
       transform: none;
     transform-origin: unset; 
