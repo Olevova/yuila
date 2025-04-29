@@ -8,7 +8,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 html {
@@ -16,16 +17,15 @@ html {
   overflow-x: hidden;
   position: relative;
 
-//   &.modal-open {
-//     overflow-y: hidden;
-//   }
+  //   &.modal-open {
+  //     overflow-y: hidden;
+  //   }
 }
 // html:has(.backdrop[show=true]) {
 //   overflow: hidden;
 // }
 
-
-body{
+body {
   font-family: var(--prime);
   font-style: normal;
   font-weight: 400;
@@ -36,7 +36,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   font-family: var(--big);
   font-style: normal;
   font-weight: 400;
@@ -54,7 +54,8 @@ ul {
   padding: 0;
 }
 
-ul,li {
+ul,
+li {
   list-style: none;
 }
 
@@ -67,42 +68,43 @@ img {
   width: 100%;
 }
 
-a, button{
+a,
+button {
   cursor: pointer;
   border: none;
   text-decoration: none;
-  color:inherit
+  color: inherit;
 }
 
 button:focus {
   outline: none;
 }
 
-button{
-    padding: 20px 33px;
-    width: fit-content;
-    font-family: var(-btnFonts);
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-    transition: background-color linear 300ms ;
-    &.blue{
-        background-color: var(--bg-primary);
-        color:var(--btn-blue);
-        &:hover,
-        &:focus {
-      background-color: var(--btn-active); 
-    }
-    }
-    &.black{
-        background-color: var(--black);
-        color:var(--white);
-        &:hover,
+button {
+  padding: 20px 33px;
+  width: fit-content;
+  font-family: var(-btnFonts);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  transition: background-color linear 300ms;
+  &.blue {
+    background-color: var(--bg-primary);
+    color: var(--btn-blue);
+    &:hover,
     &:focus {
-      background-color: var(--btn-active-black); 
+      background-color: var(--btn-active);
     }
+  }
+  &.black {
+    background-color: var(--black);
+    color: var(--white);
+    &:hover,
+    &:focus {
+      background-color: var(--btn-active-black);
     }
+  }
 }
 .row {
   display: flex;
@@ -131,7 +133,7 @@ button{
   align-items: center;
 }
 
-.align-items-baseline{
+.align-items-baseline {
   align-items: baseline;
 }
 
@@ -146,7 +148,6 @@ button{
 .overflow-hidden {
   overflow: hidden;
 }
-
 
 .container {
   @media (min-width: 0) {
@@ -163,7 +164,6 @@ button{
   @media (min-width: #{$mobile_hor}) {
     min-width: $mobile_hor;
   }
-
 
   @media (min-width: #{$pc-small}) {
     max-width: $pc-small;
@@ -185,39 +185,30 @@ button{
   --second: "Roboto", sans-serif;
   --big: "Cormorant", sans-serif;
   --btnFonts: "Raleway", sans-serif;
-//text color
- --black:#000;
- --black-second: #1e1e20;
- --white:#fff;
-//Button
- --btn-blue:#333735;
- --btn-active:#a6f0ec;
- --btn-active-black: #333;
-// border
- 
-    
-// Background
-  --bg-section-blue:#24334D;
+  //text color
+  --black: #000;
+  --black-second: #1e1e20;
+  --white: #fff;
+  //Button
+  --btn-blue: #333735;
+  --btn-active: #a6f0ec;
+  --btn-active-black: #333;
+  // border
+
+  // Background
+  --bg-section-blue: #24334d;
   --bg-primary: #7ce5e0;
-  --bg-section:#F8F8F8;
-  
-  
-//Elements Image Backgrounds;
+  --bg-section: #f8f8f8;
 
+  //Elements Image Backgrounds;
 
-// Icon
+  // Icon
 
-  
-// Backdrop
+  // Backdrop
 
+  //Form
 
-//Form
+  //Error color
 
-
-//Error color
-
-
-//slider
-  
-
+  //slider
 }

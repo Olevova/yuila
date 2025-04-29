@@ -2,30 +2,38 @@
 .whom {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   @media (min-width: #{$pc-small}) {
     padding: 50px 20px 70px 20px;
   }
   &__titlewraper {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     justify-content: space-between;
     max-width: 80%;
     padding-bottom: 30px;
-    margin: 0 auto;
     gap: 20px;
+
+    @media (min-width: #{$mobile_hor}) {
+      align-items: center;
+      margin: 0 auto;
+    }
 
     @media (min-width: #{$pc-small}) {
       max-width: 936px;
+      
     }
   }
   &__title {
     font-family: var(--big);
     font-size: 64px;
     line-height: 80%;
-    text-align: center;
+    text-align: start;
+    @media (min-width: #{$mobile_hor}) {
+      text-align: center;
+    }
     @media (min-width: #{$pc-small}) {
       line-height: 110%;
     }
@@ -102,7 +110,7 @@
   .icon-svg--one {
     transform: rotate(-90deg);
     transform-origin: top left;
-    left: -5px;
+    left: -3px;
     top: 2px;
     @media (min-width: 700px) {
       transform: none;
@@ -156,8 +164,8 @@
   .icon-svg--five {
     transform: rotate(270deg);
     transform-origin: bottom left;
-    left: 38px;
-    bottom: -3px;
+    left: 35px;
+    bottom: -2px;
     @media (min-width: 700px) {
       transform: none;
     transform-origin: unset; 

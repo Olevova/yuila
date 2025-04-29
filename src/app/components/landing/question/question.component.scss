@@ -10,6 +10,7 @@
   text-align: center;
   align-items: center;
   margin-top: -200px;
+
   & > h2 {
     font-family: var(--big);
     font-size: 64px;
@@ -18,9 +19,21 @@
   }
  
 }
-.wright{
-    color: var(--btn-blue);
+.write{
+    color: var(--bg-section-blue);
     font-weight: 900;
     font-size: 14px;
-    
+    background-color: var(--white);
+    &:hover,
+    &:focus {
+      background-color: var(--bg-section);
+    }
+  }
+  .icon-svg{
+    width: 45px;
+    height: 40px;
+    background: var(--white);
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 15px;
   }

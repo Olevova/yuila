@@ -1,7 +1,7 @@
 @use "../../../../assets/scss/breakpoint" as *;
 .price {
   &__title {
-    padding: 75px 0 100px 0;
+    padding: 30px 0 150px 0;
     & > h2 {
       text-align: center;
       font-family: var(--big);
@@ -16,7 +16,10 @@
     background: url("../../../../assets/images/price.webp");
     background-size: cover;
     min-height: 690px;
-    padding: 0 20px 70px 20px;
+    padding: 0 0 70px 0;
+    @media (min-width: #{$pc-small}) {  
+      padding: 0 20px 70px 20px;
+  }
   }
   &__card {
     // padding: 50px 40px;
@@ -26,20 +29,20 @@
     width: calc(33.33% - 20px);
     background-color: var(--white);
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
-    gap: 30px;
+    gap: 20px;
     @media (min-width: #{$pc-small}) {  
         max-width: 360px;
-        min-height: 560px;
+        min-height: 550px;
     }
 
     &-conditions {
       align-items: center;
-      gap: 25px;
+      // gap: 25px;
     }
   }
   &__container {
     gap: 30px;
-    top: -30px;
+    top: -96px;
     position: relative;
     justify-content: center;
     flex-direction: column;
@@ -50,13 +53,16 @@
 
   }
   &__card-title {
-    padding: 25px 40px;
+    padding: 25px 35px;
     background-color: var(--bg-section-blue);
     font-size: 40px;
     color: var(--white);
+    @media (min-width: #{$pc-small}) {  
+      padding: 25px 45px;
+  }
   }
   &__card-conditions {
-    padding: 20px 25px 44px 40px;
+    padding: 20px 25px 44px 30px;
     flex-grow: 1;
   }
 
@@ -69,21 +75,28 @@
     font-size: 64px;
     text-align: center;
     color: #333735;
+    margin-bottom: 20px;
   }
 
 .conditions {
-  gap: 15px;
-  padding: 0 25px 0 20px;
+  gap: 20px;
+  padding: 0 10px 0 40px;
   flex-grow: 1;
   & > li {
     list-style: disc;
+    & > p{
+      // font-weight: 700;
+      font-size: 20px;
+      color: var(--btn-blue);
+    }
   }
 }
 
 .benefits {
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 10px;
+  margin-top: -70px;
   color:var(--white);
   &__title{
     font-family: var(--big);
