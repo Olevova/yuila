@@ -1,7 +1,8 @@
+@use "../../../../assets/scss/breakpoint" as *;
 .question {
-  background: url("../../../../assets/images/question.webp");
+  background: url("../../../../assets/images/question-sm.webp");
   background-size: cover;
-  padding: 183px 0;
+  padding: 183px 0 100px 0;
   color: var(--white);
   height: 100%;
   gap: 100px;
@@ -10,6 +11,10 @@
   text-align: center;
   align-items: center;
   margin-top: -200px;
+  @media (min-width: #{$mobile_hor}) {
+    background: url("../../../../assets/images/question.webp");
+    background-size: cover;
+  }
 
   & > h2 {
     font-family: var(--big);
@@ -36,4 +41,23 @@
    text-align: center;
    margin: 0 auto;
    margin-top: 15px;
+  }
+
+  .media{
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+  }
+
+  .icon-media{
+    width: 35px;
+    height: 35px;
+    background:var(--bg-primary);
+    transition: background-color 200ms linear ;
+    &:hover,
+    &:focus {
+      background:var(--btn-active)
+    }
   }

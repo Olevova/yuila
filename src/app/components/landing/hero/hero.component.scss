@@ -47,6 +47,19 @@
       line-height: 90%;
       max-width: 1000px;
     }
+   
+  }
+  &__text{
+    font-family: var(--prime);
+    font-size: 20px;
+    line-height: 143%;
+    color: var(--white);
+    z-index: 4;
+    margin-bottom: 20px;
+    @media (min-width: #{$mobile_hor}) {
+      margin-bottom: 36px;
+      font-size: 28px;
+    }
   }
   & button {
     z-index: 3;
