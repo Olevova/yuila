@@ -2,7 +2,7 @@
 .question {
   background: url("../../../../assets/images/question-sm.webp");
   background-size: cover;
-  padding: 183px 0 100px 0;
+  padding: 190px 0 65px 0;
   color: var(--white);
   height: 100%;
   gap: 100px;
@@ -20,7 +20,7 @@
     font-family: var(--big);
     font-size: 64px;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
   }
  
 }
@@ -44,7 +44,7 @@
   }
 
   .media{
-    margin-top: 85px;
+    margin-top: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
