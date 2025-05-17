@@ -16,10 +16,10 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 23119, hash: 'd5545008b9f5fa7b1968cd7a03d0c2b1fcbaced711096c264a0e4df0bb2b3869', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 22928, hash: '97b416e2b3306e0a0436e76aa1cad60581a80eadf0217429ca8889f1b4d9ad25', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 52125, hash: '893918b412c4d4abec764e4895b0cc076a644528d8722c21b975d9d6597e7c38', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'contact/index.html': {size: 27071, hash: '581ab42d99acd468a33d2422873313f414408194ce0ca249542d705282ebb595', text: () => import('./assets-chunks/contact_index_html.mjs').then(m => m.default)},
-    'styles-PGSG5SB7.css': {size: 3782, hash: 'GlvrLet1LvM', text: () => import('./assets-chunks/styles-PGSG5SB7_css.mjs').then(m => m.default)}
+    'index.csr.html': {size: 23140, hash: 'fbf4ddc441b54b7c0dc2594e7052efe3987439e2e315e0930a3d99ef1990771b', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 22949, hash: 'd8c608095bbbf9044dfca6853507e941ac3728e6425a40040c0fda678f4070d8', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'contact/index.html': {size: 27117, hash: '724982b8e8b2ae0e63467bc7ec2e0e25d2755c72d0e69a9f4715cdb398b6fbdd', text: () => import('./assets-chunks/contact_index_html.mjs').then(m => m.default)},
+    'index.html': {size: 55100, hash: '0eada56ade82a55cd2f84a46cb2b82bd2477a9add58e3648ecb8e51f5cb76e86', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'styles-PFUNF4HQ.css': {size: 3788, hash: 'GwviV287M+E', text: () => import('./assets-chunks/styles-PFUNF4HQ_css.mjs').then(m => m.default)}
   },
 };

@@ -1,4 +1,5 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { SEO_CONTACT } from '../../seo/seo.config';
 import { HttpClient } from '@angular/common/http';
 import {
   FormBuilder,
@@ -7,19 +8,27 @@ import {
   Validators,
 } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { SeoService } from '../../services/seo.service';
+
 @Component({
   selector: 'app-form',
   imports: [ReactiveFormsModule, CommonModule ],
   templateUrl: './form.component.html',
   styleUrl: './form.component.scss',
 })
-export class FormComponent {
+export class FormComponent implements OnInit {
   private formBuilder = inject(FormBuilder);
   private http = inject(HttpClient);
+  private seoService = inject(SeoService);
   sendMessage: boolean = false;
   errorMsg: boolean = false;
   errorText: string = '';
   isSending = false;
+
+ngOnInit(){
+   this.seoService.updateTags(SEO_CONTACT);
+   this.seoService.setCanonicalLink();
+}
 
   form: FormGroup = this.formBuilder.group({
     name: ['', [Validators.required, Validators.minLength(2)]],
