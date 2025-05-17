@@ -16,7 +16,7 @@ export class SeoService {
   ) { }
 
   updateTags(config: SeoConfig){
-    if (!isPlatformBrowser(this.platformId)) return;
+    if (isPlatformBrowser(this.platformId)) return;
     // Встановлюємо заголовок сторінки
     this.title.setTitle(config.title);
 
@@ -53,7 +53,7 @@ export class SeoService {
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
   }
   setCanonicalLink(url?: string){
-    if (!isPlatformBrowser(this.platformId)) return;
+    if (isPlatformBrowser(this.platformId)) return;
     const canURL = url || this.getBaseUrl();
     
     let link = this.getCanonicalLink();
