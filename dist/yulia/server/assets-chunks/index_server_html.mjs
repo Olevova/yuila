@@ -1,5 +1,5 @@
 export default `<!doctype html>
-<html lang="en">
+<html lang="uk"> 
 <head>
   <meta charset="utf-8">
   <title>Курс з туризму онлайн | Юлія Короновська — Тревел експерт</title>

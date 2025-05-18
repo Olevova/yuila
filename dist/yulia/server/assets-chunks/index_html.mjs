@@ -1,4 +1,4 @@
-export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
+export default `<!DOCTYPE html><html lang="uk" data-beasties-container><head>
   <meta charset="utf-8">
   <title>Курс з туризму онлайн | Юлія Короновська — Тревел експерт</title>
   <base href="/">
