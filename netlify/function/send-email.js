@@ -13,11 +13,10 @@ exports.handler = async function (event, context) {
   });
 
   const mailOptions = {
-    from: `"${name}" <${email}>`,
+    from: `"${name}" <${process.env.EMAIL_FROM}>`,
     to: process.env.EMAIL_TO, 
     subject: 'Нове повідомлення з сайту',
-    phone: phone,
-    message: message
+    text: `Ім'я: ${name}\nEmail: ${email}\nТелефон: ${phone}\nПовідомлення:\n${message}`,
   };
 
   try {
