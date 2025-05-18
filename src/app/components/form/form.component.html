@@ -31,14 +31,14 @@
     </form>
 
     @if(sendMessage){
-        <div>
+        <div class="backdrop" [attr.show]="sendMessage">
             <p>Ваше повідомлення надіслано успішно</p>
             <button (click)="closeSuccesMsg()">Закрити</button>
         </div>
     }
 
     @if(errorMsg){
-        <div>
+        <div class="backdrop" [attr.show]="errorMsg">
             <p>Сталася помилка: {{ errorText }}</p>
             <button (click)="closeErrorMsg()">Закрити</button>
         </div>
