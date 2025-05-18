@@ -2,9 +2,32 @@ export default `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Курс з туризму</title>
+  <title>Курс з туризму онлайн | Юлія Короновська — Тревел експерт</title>
+
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO базові теги -->
+  <meta name="description" content="Онлайн-курс з туризму від Юлії Короновської — для тих, хто хоче стати менеджером з туризму, відкрити турагентство або вдосконалити свої знання.">
+  <meta name="keywords" content="курс з туризму, менеджер з туризму, навчання туризм, онлайн туризм, Юлія Короновська">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Курс з туризму онлайн | Юлія Короновська — Тревел експерт">
+  <meta property="og:description" content="Онлайн-курс з туризму від Юлії Короновської — для тих, хто хоче стати менеджером з туризму, відкрити турагентство або вдосконалити свої знання.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://travelexpert.com.ua/assets/images/about-me-section.webp">
+  <meta property="og:url" content="https://travelexpert.com.ua">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Курс з туризму онлайн | Юлія Короновська — Тревел експерт">
+  <meta name="twitter:description" content="Онлайн-курс з туризму від Юлії Короновської — для тих, хто хоче стати менеджером з туризму, відкрити турагентство або вдосконалити свої знання.">
+  <meta name="twitter:image" content="https://travelexpert.com.ua/assets/images/about-me-section.webp">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://travelexpert.com.ua/">
+  
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -13,6 +36,6 @@ export default `<!doctype html>
 <body><script type="text/javascript" id="ng-event-dispatch-contract">(()=>{function p(t,n,r,o,e,i,f,m){return{eventType:t,event:n,targetElement:r,eic:o,timeStamp:e,eia:i,eirp:f,eiack:m}}function u(t){let n=[],r=e=>{n.push(e)};return{c:t,q:n,et:[],etc:[],d:r,h:e=>{r(p(e.type,e,e.target,t,Date.now()))}}}function s(t,n,r){for(let o=0;o<n.length;o++){let e=n[o];(r?t.etc:t.et).push(e),t.c.addEventListener(e,t.h,r)}}function c(t,n,r,o,e=window){let i=u(t);e._ejsas||(e._ejsas={}),e._ejsas[n]=i,s(i,r),s(i,o,!0)}window.__jsaction_bootstrap=c;})();
 </script>
   <app-root></app-root>
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-I3KQLVAZ.js" type="module"></script></body>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-RJLGMHBA.js" type="module"></script></body>
 </html>
 `;

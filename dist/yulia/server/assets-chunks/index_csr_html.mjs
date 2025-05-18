@@ -2,9 +2,32 @@ export default `<!doctype html>
 <html lang="en" data-beasties-container="">
 <head>
   <meta charset="utf-8">
-  <title>Курс з туризму</title>
+  <title>Курс з туризму онлайн | Юлія Короновська — Тревел експерт</title>
+
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO базові теги -->
+  <meta name="description" content="Онлайн-курс з туризму від Юлії Короновської — для тих, хто хоче стати менеджером з туризму, відкрити турагентство або вдосконалити свої знання.">
+  <meta name="keywords" content="курс з туризму, менеджер з туризму, навчання туризм, онлайн туризм, Юлія Короновська">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Курс з туризму онлайн | Юлія Короновська — Тревел експерт">
+  <meta property="og:description" content="Онлайн-курс з туризму від Юлії Короновської — для тих, хто хоче стати менеджером з туризму, відкрити турагентство або вдосконалити свої знання.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://travelexpert.com.ua/assets/images/about-me-section.webp">
+  <meta property="og:url" content="https://travelexpert.com.ua">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Курс з туризму онлайн | Юлія Короновська — Тревел експерт">
+  <meta name="twitter:description" content="Онлайн-курс з туризму від Юлії Короновської — для тих, хто хоче стати менеджером з туризму, відкрити турагентство або вдосконалити свої знання.">
+  <meta name="twitter:image" content="https://travelexpert.com.ua/assets/images/about-me-section.webp">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://travelexpert.com.ua/">
+  
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -12,6 +35,6 @@ export default `<!doctype html>
 <style>html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}*,*:before,*:after{box-sizing:border-box}html,body{scroll-behavior:smooth}html{min-height:100vh;overflow-x:hidden;position:relative}body{font-family:var(--prime);font-style:normal;font-weight:400}:root{--prime:"Source Sans 3", sans-serif;--second:"Roboto", sans-serif;--big:"Cormorant", sans-serif;--btnFonts:"Raleway", sans-serif;--black:#000;--black-second:#1e1e20;--white:#fff;--btn-blue:#333735;--btn-active:#a6f0ec;--btn-active-black:#333;--bg-section-blue:#24334d;--bg-primary:#7ce5e0;--bg-section:#f8f8f8}</style><link rel="stylesheet" href="styles-PFUNF4HQ.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-PFUNF4HQ.css"></noscript></head>
 <body ngcm="">
   <app-root></app-root>
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-I3KQLVAZ.js" type="module"></script></body>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-RJLGMHBA.js" type="module"></script></body>
 </html>
 `;
