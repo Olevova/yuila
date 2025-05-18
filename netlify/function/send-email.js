@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 
 exports.handler = async function (event, context) {
   const data = JSON.parse(event.body);
-  const { name, email, phone } = data;
+  const { name, email, phone, message } = data;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -16,7 +16,8 @@ exports.handler = async function (event, context) {
     from: `"${name}" <${email}>`,
     to: process.env.EMAIL_TO, 
     subject: 'Нове повідомлення з сайту',
-    phone: message,
+    phone: phone,
+    message: message
   };
 
   try {

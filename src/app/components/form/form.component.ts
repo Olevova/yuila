@@ -34,9 +34,12 @@ ngOnInit(){
     name: ['', [Validators.required, Validators.minLength(2)]],
     email: ['', [Validators.required, Validators.email]],
     phone: [''],
+    message:['', [Validators.maxLength(250)]]
   });
 
   onSubmit(el: HTMLElement) {
+    console.log(this.form.controls['name'].hasError('required'), this.form.controls);
+    
     if (this.form.invalid) return;
     console.log(this.form.invalid);
     

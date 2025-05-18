@@ -17,3 +17,15 @@ form > label{
     width: 100%;
     padding: 14px 15px;
 }
+
+textarea.input{
+    resize: none;
+    word-wrap: break-word;
+}
+
+.error {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: var(--error);
+  }

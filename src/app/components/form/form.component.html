@@ -1,15 +1,28 @@
 <section class="form container flex-column">
 
-    <form class="flex-column" action="" [formGroup]="form" (ngSubmit)="onSubmit(sendBtn)">
+    <form #formEl="ngForm" class="flex-column" action="" [formGroup]="form" (ngSubmit)="onSubmit(sendBtn)">
         <h2>Зв’язатись з нами</h2>
         <label for="name">
-            <input class="input" id="name" type="text"  placeholder="ім'я" formControlName="name">
+            <input class="input" id="name" type="text"  placeholder="ім'я *" formControlName="name">
+            <p class="error" *ngIf="form.controls['name'].hasError('required') && formEl.submitted">Вкажіть ім'я</p>
+            <p class="error" *ngIf="form.controls['name'].hasError('minlength') && formEl.submitted">
+                Ім'я має містити мінімум 2 символа
+            </p>
         </label>
         <label for="email">
-            <input class="input" id="email" type="email" placeholder="електронна скринька" formControlName="email">
+            <input class="input" id="email" type="email" placeholder="електронна скринька *" formControlName="email">
+            <p class="error" id="emailErrorInvalid" *ngIf="form.controls['email'].hasError('required') && formEl.submitted">
+          Вкажіть Ваш email
+        </p>
+        <p class="error" id="emailErrorInvalid" *ngIf="form.controls['email'].hasError('email') && formEl.submitted">
+          Не вірний формат 
+        </p>
         </label>
         <label for="phone">
             <input class="input" id="phone" type="tel" placeholder="телефон" formControlName="phone">
+        </label>
+        <label for="message">
+            <textarea class="input"  id="message" rows="2" placeholder="запитайти нас" formControlName="message"></textarea>
         </label>
         <button type="submit" [disabled]="form.invalid || isSending" [ngClass]="form.valid ? 'blue': ''">
             {{ isSending ? 'Надсилається...' : 'Зв’язатись' }}
