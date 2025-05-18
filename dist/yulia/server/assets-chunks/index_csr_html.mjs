@@ -3,7 +3,6 @@ export default `<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>Курс з туризму онлайн | Юлія Короновська — Тревел експерт</title>
-
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,7 +26,7 @@ export default `<!doctype html>
 
   <!-- Canonical -->
   <link rel="canonical" href="https://travelexpert.com.ua/">
-  
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -35,6 +34,6 @@ export default `<!doctype html>
 <style>html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}*,*:before,*:after{box-sizing:border-box}html,body{scroll-behavior:smooth}html{min-height:100vh;overflow-x:hidden;position:relative}body{font-family:var(--prime);font-style:normal;font-weight:400}:root{--prime:"Source Sans 3", sans-serif;--second:"Roboto", sans-serif;--big:"Cormorant", sans-serif;--btnFonts:"Raleway", sans-serif;--black:#000;--black-second:#1e1e20;--white:#fff;--btn-blue:#333735;--btn-active:#a6f0ec;--btn-active-black:#333;--bg-section-blue:#24334d;--bg-primary:#7ce5e0;--bg-section:#f8f8f8}</style><link rel="stylesheet" href="styles-PFUNF4HQ.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-PFUNF4HQ.css"></noscript></head>
 <body ngcm="">
   <app-root></app-root>
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-RJLGMHBA.js" type="module"></script></body>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-55TO4D54.js" type="module"></script></body>
 </html>
 `;

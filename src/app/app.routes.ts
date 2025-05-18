@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { FormComponent } from './components/form/form.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 export const routes: Routes = [{
     path:'',
@@ -9,5 +10,9 @@ export const routes: Routes = [{
 {
     path:'contact',
     component:FormComponent
+},
+{
+    path:'**',
+    component:NotFoundComponent
 }
 ];

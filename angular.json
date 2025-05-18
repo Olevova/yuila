@@ -27,7 +27,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
              "src/assets",
-             "src/favicon.ico"
+             "src/favicon.ico",
+             "src/sitemap.xml",
+             "src/robots.txt"
             ],
             "styles": [
               "src/styles.scss"
@@ -67,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Yulia:build:production"
+              "buildTarget": "yulia:build:production"
             },
             "development": {
-              "buildTarget": "Yulia:build:development"
+              "buildTarget": "yulia:build:development"
             }
           },
           "defaultConfiguration": "development"

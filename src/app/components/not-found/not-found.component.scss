@@ -1,0 +1,18 @@
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    font-size: 36px;
+}
+
+.error{
+    color: var(--bg-primary);
+    
+}
