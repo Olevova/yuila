@@ -25,7 +25,7 @@ export class FormComponent implements OnInit {
   errorText: string = '';
   isSending = false;
 
-ngOnInit(){
+ ngOnInit(){
    this.seoService.updateTags(SEO_CONTACT);
    this.seoService.setCanonicalLink();
 }
