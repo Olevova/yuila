@@ -21,9 +21,9 @@ html {
   //     overflow-y: hidden;
   //   }
 }
-// html:has(.backdrop[show=true]) {
-//   overflow: hidden;
-// }
+html:has(.backdrop[show=true]) {
+  overflow: hidden;
+}
 
 body {
   font-family: var(--prime);

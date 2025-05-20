@@ -39,7 +39,7 @@
 
     @if(errorMsg){
         <div class="backdrop" [attr.show]="errorMsg">
-            <p>Сталася помилка: {{ errorText }}</p>
+            <p class="text-error">Сталася помилка: {{ errorText }}</p>
             <button (click)="closeErrorMsg()">Закрити</button>
         </div>
     }

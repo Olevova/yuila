@@ -53,4 +53,11 @@ textarea.input{
     visibility: visible;
     z-index: 25;
   }
+  & > p{
+    text-align: center;
+    color: var(--white);
+  }
+  & .text-error{
+    color: var(--error);
+  }
 }
