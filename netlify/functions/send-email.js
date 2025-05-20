@@ -16,7 +16,19 @@ exports.handler = async function (event, context) {
     from: `"${name}" <${process.env.EMAIL_FROM}>`,
     to: process.env.EMAIL_TO, 
     subject: 'Нове повідомлення з сайту',
-    text: `Ім'я: ${name}\nEmail: ${email}\nТелефон: ${phone}\nПовідомлення:\n${message}`,
+    // text: `Ім'я: ${name}\nEmail: ${email}\nТелефон: ${phone}\nПовідомлення:\n${message}`,
+    html: `
+      <div style="font-family: Arial, sans-serif; padding: 20px; line-height: 1.5;">
+        <h2 style="color: #2c3e50;">Нове повідомлення з сайту</h2>
+        <p><strong>Ім'я:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Телефон:</strong> ${phone}</p>
+        <p><strong>Повідомлення:</strong></p>
+        <div style="background-color: #f4f4f4; padding: 10px; border-radius: 4px;">
+          ${message.replace(/\n/g, '<br>')}
+        </div>
+      </div>
+    `,
   };
 
   try {
