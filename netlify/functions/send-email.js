@@ -14,7 +14,7 @@ exports.handler = async function (event, context) {
 
   const mailOptions = {
     from: `"${name}" <${process.env.EMAIL_FROM}>`,
-    to: process.env.EMAIL_TO, 
+    to: [process.env.EMAIL_TO, process.env.EMAIL_TO2],
     subject: 'Нове повідомлення з сайту',
     // text: `Ім'я: ${name}\nEmail: ${email}\nТелефон: ${phone}\nПовідомлення:\n${message}`,
     html: `
