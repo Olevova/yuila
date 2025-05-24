@@ -19,8 +19,8 @@ export class AppComponent {
   
   private setupSEO(): void {
     this.seoService.updateTags({
-      title: 'Yuila Course - Навчальний курс по туризму',
-      description: 'Навчальний курс Yuila - покращте свої навички та отримайте сертифікат',
+      title: ' Юлія Короновська - Навчальний курс по туризму',
+      description: 'Навчальний курс - покращте свої навички та отримайте сертифікат',
       keywords: 'курс, навчання, сертифікат, онлайн-курс, професійний розвиток',
       image: 'https://yuila-course.netlify.app/assets/images/course-preview.jpg', // Шлях до головного зображення курсу
       url: 'https://yuila-course.netlify.app/'
