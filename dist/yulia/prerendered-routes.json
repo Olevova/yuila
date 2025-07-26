@@ -2,6 +2,7 @@
   "routes": {
     "/": {},
     "/404": {},
+    "/agreement": {},
     "/contact": {}
   }
 }

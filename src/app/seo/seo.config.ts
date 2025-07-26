@@ -15,3 +15,12 @@ export const SEO_CONTACT = {
   image:'https://travelexpert.com.ua/assets/images/about-me-section.webp',
   url: 'https://travelexpert.com.ua/contact'
 };
+
+export const SEO_AGREEMENT = {
+  title: 'Угода користувача | Онлайн-курс з туризму',
+  description: 'Ознайомтеся з умовами використання сайту та навчального курсу з туризму від Юлії Короновської.',
+  keywords: 'угода користувача, умови користування, курс з туризму, правила користування',
+  type: 'website',
+  image: 'https://travelexpert.com.ua/assets/images/about-me-section.webp',
+  url: 'https://travelexpert.com.ua/agreement'
+};
