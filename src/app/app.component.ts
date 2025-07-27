@@ -27,6 +27,6 @@ export class AppComponent {
     });
 
     // Встановлюємо канонічний URL
-    this.seoService.setCanonicalLink('https://yuila-course.netlify.app/');
+    this.seoService.setCanonicalLink('https://travelexpert.com.ua/');
   }
 }
