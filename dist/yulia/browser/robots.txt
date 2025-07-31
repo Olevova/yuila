@@ -1,4 +1,2 @@
 User-agent: *
 Disallow:
-
-Sitemap: https://travelexpert.com.ua/sitemap.xml
