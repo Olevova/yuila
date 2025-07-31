@@ -23,7 +23,7 @@ export class AppComponent {
       description: 'Навчальний курс - покращте свої навички та отримайте сертифікат',
       keywords: 'курс, навчання, сертифікат, онлайн-курс, професійний розвиток',
       image: 'https://yuila-course.netlify.app/assets/images/course-preview.jpg', // Шлях до головного зображення курсу
-      url: 'https://yuila-course.netlify.app/'
+      url: 'https://travelexpert.com.ua/'
     });
 
     // Встановлюємо канонічний URL
