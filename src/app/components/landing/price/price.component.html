@@ -24,7 +24,7 @@
               </li>
             </ul>
             <span class="number">{{22900}} ₴</span>
-            <button (click)="payFunc()" class="blue">Оплатити</button>
+            <button (click)="payFunc('base')" class="blue">Оплатити</button>
           </div>
         </li>
         <li class="price__card flex-column">
@@ -45,7 +45,7 @@
               </li>
             </ul>
             <span class="number">{{31500}} ₴</span>
-            <button (click)="payFunc()" class="blue">Оплатити</button>
+            <button (click)="payFunc('max')" class="blue">Оплатити</button>
           </div>
         </li>
         <li class="price__card flex-column">
@@ -63,7 +63,7 @@
               </li>
             </ul>
             <span class="number">{{38900}} ₴</span>
-            <button class="blue" (click)="payFunc()">Оплатити</button>
+            <button class="blue" (click)="payFunc('exclusive')">Оплатити</button>
           </div>
         </li>
       </ul>
