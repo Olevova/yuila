@@ -12,10 +12,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './agreement.component.scss'
 })
 export class AgreementComponent {
-  private seo = inject(SeoService)
+  // private seo = inject(SeoService)
   constructor(){}
   ngOnInit(): void {
-    this.seo.updateTags(SEO_AGREEMENT);
-    this.seo.setCanonicalLink(SEO_AGREEMENT.url);
+    // this.seo.updateTags(SEO_AGREEMENT);
+    // this.seo.setCanonicalLink(SEO_AGREEMENT.url);
   }
 }

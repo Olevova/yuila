@@ -11,11 +11,11 @@ import { SEO_PAYMENT_SUCCESS } from '../../seo/seo.config';
 })
 export class PaymentSuccessComponent implements OnInit{
    private linkService = inject(LinkService);
-   private seoService = inject(SeoService);
+  //  private seoService = inject(SeoService);
 
     ngOnInit(){
-      this.seoService.updateTags(SEO_PAYMENT_SUCCESS);
-      this.seoService.setCanonicalLink();
+      // this.seoService.updateTags(SEO_PAYMENT_SUCCESS);
+      // this.seoService.setCanonicalLink();
     }
 
   openTelegram() {

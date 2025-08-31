@@ -19,15 +19,15 @@ import { SeoService } from '../../services/seo.service';
 export class FormComponent implements OnInit {
   private formBuilder = inject(FormBuilder);
   private http = inject(HttpClient);
-  private seoService = inject(SeoService);
+  // private seoService = inject(SeoService);
   sendMessage: boolean = false;
   errorMsg: boolean = false;
   errorText: string = '';
   isSending = false;
 
  ngOnInit(){
-   this.seoService.updateTags(SEO_CONTACT);
-   this.seoService.setCanonicalLink();
+  //  this.seoService.updateTags(SEO_CONTACT);
+  //  this.seoService.setCanonicalLink();
 }
 
   form: FormGroup = this.formBuilder.group({
