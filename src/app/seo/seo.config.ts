@@ -24,3 +24,12 @@ export const SEO_AGREEMENT = {
   image: 'https://travelexpert.com.ua/assets/images/about-me-section.webp',
   url: 'https://travelexpert.com.ua/agreement'
 };
+
+export const SEO_PAYMENT_SUCCESS = {
+  title: 'Оплата пройшла успішно | Онлайн-курс з туризму',
+  description: 'Вітаємо! Оплата успішна. Доступ до закритої спільноти в Telegram вже чекає на вас.',
+  keywords: 'оплата пройшла успішно',
+  type: 'website',
+  url: 'https://travelexpert.com.ua/payment-success',
+  image: 'https://travelexpert.com.ua/assets/images/about-me-section.webp',
+};

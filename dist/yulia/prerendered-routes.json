@@ -3,6 +3,7 @@
     "/": {},
     "/404": {},
     "/agreement": {},
-    "/contact": {}
+    "/contact": {},
+    "/payment-success": {}
   }
 }

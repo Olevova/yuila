@@ -1,0 +1,78 @@
+@use "../../../assets/scss/breakpoint" as *;
+.success {
+  flex: 1 1 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: var(--bg-section-blue);
+  color: var(--white);
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  & h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: var(--big);
+    font-size: 64px;
+    line-height: 110%;
+    text-align: center;
+    color: var(--bg-primary);
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+  }
+
+  &__block {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05); 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .flex-column {
+    align-items: center;
+  }
+
+  .social {
+    background: var(--bg-primary);
+    padding: 10px 16px;
+    color: var(--black);
+    cursor: pointer;
+    width: fit-content;
+    font-family: var(-btnFonts);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    transition: background-color linear 300ms;
+  }
+  &__contacts {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
